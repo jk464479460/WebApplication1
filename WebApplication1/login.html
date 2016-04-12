@@ -1,0 +1,50 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>denglu</title>
+   
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <link href="js/mobile/jquery.mobile-1.4.5.min.css" rel="stylesheet" />
+    <link href="js/mobile/jquery.mobile.theme-1.4.5.min.css" rel="stylesheet" />
+    <script src="http://code.jquery.com/jquery-1.10.2.min.js"></script>
+    <script src="js/mobile/jquery.mobile-1.4.5.min.js"></script>
+
+    <style>
+        .ui-input-text {
+            background-color: forestgreen;
+        }
+       
+    </style>
+  
+</head>
+<body>
+    <div data-role="page" id="home">
+        <div  data-position='fixed'  data-role="header">
+            <a href="index.html" data-icon="arrow-l" data-iconpos="notext"></a>
+            <h1>欢迎登录</h1>
+        </div>
+
+        <div data-role="content" style="clear:both">
+            <form method="POST">
+                <div data-role="fieldcontain">
+                    <input type="text" data-theme="f" style='background-image: url("images/user.png");background-position: right center;background-repeat: no-repeat;' id="username" placeholder="用户名"/>
+                    <input type="password" data-theme="f" id="password" placeholder="密码"/>
+                </div>
+                <input type="button" data-inline="true" value="登陆"/>
+                <a href="reg.html">注册有礼</a>
+            </form>
+
+        </div>
+
+        <div data-role="footer" data-position="fixed" data-id="footernav">
+            <div data-role="navbar">
+                <ul>
+                    <li><a href="index.html" class="ui-btn-active">首页</a></li>
+                    <li><a href="cartgo.html">购物车</a></li>
+                    <li><a href="c.html">我的佳荷</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
